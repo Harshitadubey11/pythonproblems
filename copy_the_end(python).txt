@@ -1,0 +1,7 @@
+
+def copyCat(string):
+    string1 =""
+    q = len(string)
+    string1 = string[-2:]
+    # return (string(-1,-3)*3)
+    return string1*3

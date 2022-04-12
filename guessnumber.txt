@@ -1,0 +1,25 @@
+print("Welcome to the game: ")
+n=18
+print("Number of Guess you have: 5")
+guess_num = 5
+while(guess_num >0):
+    num1 = int(input("Enter the number: "))
+    if num1 < 18:
+        print("Enter the larger number")
+        guess_num = guess_num-1
+        print("Number of guess left: ",guess_num)
+        continue
+    elif num1 > 18:
+        print("Enter the smaller number: ")
+        guess_num = guess_num-1
+        print("Number of guess left: ",guess_num)
+
+    elif num1 == n:
+        print("You won the game!!")
+        print("Number of guess left",guess_num)
+
+    elif guess_num == 0:
+        print("Guess left", guess_num)
+    else:
+        print("Game over")
+
